@@ -1,2 +1,3 @@
 espnet
-output*
+output_*
+**/*ipynb_checkpoints
