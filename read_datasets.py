@@ -17,5 +17,5 @@ with open(f"{dataset_name}/{split}/text", encoding="UTF-8") as rf:
         id_text[id] = text
 
 for id in id_wav:
-    wav_path = id_wav[wav_path]
-    text = id_text
+    wav_path = id_wav[id]
+    text = id_text[id]
