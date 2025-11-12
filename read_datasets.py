@@ -6,12 +6,12 @@ split = "train_nodev" # train_dev test
 
 id_wav, id_text = {}, {}
 
-with open(f"{dataset_name}/wav.scp", encoding="UTF-8") as rf:
+with open(f"{dataset_name}/{split}/wav.scp", encoding="UTF-8") as rf:
     for line in rf:
         id, wav_path = line.strip().split("\t")
         id_wav[id] = wav_path
 
-with open(f"{dataset_name}/text", encoding="UTF-8") as rf:
+with open(f"{dataset_name}/{split}/text", encoding="UTF-8") as rf:
     for line in rf:
         id, text = line.strip().split("\t")
         id_text[id] = text
